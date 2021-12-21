@@ -5,6 +5,7 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
+    'name' => '<i class="fas fa-truck-monster mx-4 text-primary"></i>Car Rent',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [

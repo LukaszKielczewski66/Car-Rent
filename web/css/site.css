@@ -53,3 +53,15 @@ nav a {
 .active {
     color: #0275d8 !important;
 }
+
+/* -------------------------------- */
+/*              FOOTER              */
+/* -------------------------------- */
+
+footer {
+    font-size: 1.6rem;
+}
+
+footer .author-name {
+    opacity: 0.8;
+}

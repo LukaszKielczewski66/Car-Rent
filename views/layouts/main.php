@@ -25,8 +25,6 @@ AppAsset::register($this);
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
-    <!-- BOOTSTRAP 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -67,9 +65,13 @@ AppAsset::register($this);
     NavBar::end();
     ?>
 
-    <?php  ?>
+    <?php echo $content ?>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <footer class="bg-dark text-light">
+        <p class="py-5 px-3 mb-0 text-center">2021 &copy; Copyright <?php echo Yii::$app->name ?></p>
+        <p class="py-5 px-3 mb-0 text-center author-name">Łukasz Kiełczewski - car rent app - yii2</p>
+    </footer>
+
     <?php $this->endBody() ?>
 </body>
 
