@@ -29,6 +29,7 @@ body {
 nav {
     font-size: 2rem;
     text-transform: uppercase;
+    display: block;
 }
 
 .navbar-toggler {
@@ -50,7 +51,7 @@ nav a {
     color: #fff !important;
 }
 
-.active {
+nav .active {
     color: #0275d8 !important;
 }
 
@@ -64,4 +65,32 @@ footer {
 
 footer .author-name {
     opacity: 0.8;
+}
+
+/* -------------------------------- */
+/*              HEADER              */
+/* -------------------------------- */
+
+header {
+    font-size: 2rem;
+}
+
+.carousel-item {
+    position: relative;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.carousel-img-one {
+    background-image: url('img/main-carousel-1.jpg');
+}
+
+.carousel-img-two {
+    background-image: url('img/main-carousel-2.jpg');
+}
+
+.carousel-img-three {
+    background-image: url('img/main-carousel-3.jpg');
 }
