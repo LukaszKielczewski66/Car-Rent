@@ -125,4 +125,11 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    // Displays cars page.
+
+    public function actionCars()
+    {
+        return $this->render('cars');
+    }
 }
