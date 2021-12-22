@@ -67,13 +67,15 @@ footer .author-name {
     opacity: 0.8;
 }
 
-/* -------------------------------- */
-/*              HEADER              */
-/* -------------------------------- */
+/* ------------HEADER------------ */
+
 
 header {
     font-size: 2rem;
 }
+
+/* ------------HOME BRAND----------- */
+
 
 .carousel-item {
     position: relative;
@@ -94,3 +96,36 @@ header {
 .carousel-img-three {
     background-image: url('../img/main-carousel-1.jpg');
 }
+
+/* ---------- HOME PASSION -------------- */
+
+.home-passion {
+    position: relative;
+    height: 350px;
+    background-image: url('../img/home-passion-car.jpg');
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+/* ------------ HOME BOXES -------------- */
+
+.home-boxes {
+    padding: 5em 0;
+}
+
+.home-box i {
+    font-size: 4rem;
+    transition: .3s;
+}
+
+.home-box i:hover {
+    color: #0275d8
+}
+
+
+.home-box h3 {
+    font-size: 2.6rem;
+}
+
+@media (min-width: 768px) {}
