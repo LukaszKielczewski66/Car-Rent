@@ -204,7 +204,14 @@ header {
     font-weight: bold;
 }
 
+/* -------------------------------- */
+/*              CARS               */
+/* -------------------------------- */
 
+.service-hero {
+    background-image: url('../img/cars-hero.jpg');
+    background-position: center;
+}
 
 
 /* @media (min-width: 768px) {} */
