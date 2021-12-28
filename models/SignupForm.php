@@ -20,4 +20,9 @@ class SignupForm extends Model
             [['email'], 'email', 'required'],
         ];
     }
+
+    public function signup()
+    {
+        $user = new User();
+    }
 }
