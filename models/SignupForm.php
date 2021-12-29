@@ -3,6 +3,7 @@
 namespace app\models;
 
 use yii\base\Model;
+use yii\helpers\VarDumper;
 
 class SignupForm extends Model
 {
@@ -29,6 +30,11 @@ class SignupForm extends Model
         $user->access_token = \Yii::$app->security->generateRandomString();
         $user->auth_key = \Yii::$app->security->generateRandomString();
 
-        $user->save();
+        if ($user->save()) {
+            return true;
+        }
+
+        \Yii::error(("User was not saved" . VarDumper::dumpAsString($user->errors)));
+        return false;
     }
 }
