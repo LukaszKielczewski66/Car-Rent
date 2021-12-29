@@ -3,7 +3,6 @@
 namespace app\models;
 
 use yii\base\Model;
-use yii\bootstrap4\Modal;
 
 class SignupForm extends Model
 {
@@ -17,12 +16,19 @@ class SignupForm extends Model
         return [
             [['username', 'email', 'password', 'password_repeat'], 'required'],
             [['username', 'password'], 'string', 'min' => 4, 'max' => 16],
-            [['email'], 'email', 'required'],
+            [['email'], 'email'],
         ];
     }
 
     public function signup()
     {
         $user = new User();
+        $user->username = $this->username;
+        $user->email = $this->email;
+        $user->password = \Yii::$app->security->generatePasswordHash($this->passowrd);
+        $user->access_token = \Yii::$app->security->generateRandomString();
+        $user->auth_key = \Yii::$app->security->generateRandomString();
+
+        $user->save();
     }
 }
