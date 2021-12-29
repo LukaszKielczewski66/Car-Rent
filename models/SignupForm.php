@@ -16,8 +16,9 @@ class SignupForm extends Model
     {
         return [
             [['username', 'email', 'password', 'password_repeat'], 'required'],
-            [['username', 'password'], 'string', 'min' => 4, 'max' => 16],
-            [['email'], 'email'],
+            [['username', 'password', 'password_repeat'], 'string', 'min' => 4, 'max' => 16],
+            ['password_repeat', 'compare', 'compareAttribute' => 'password'],
+            ['email', 'email'],
         ];
     }
 
@@ -26,7 +27,7 @@ class SignupForm extends Model
         $user = new User();
         $user->username = $this->username;
         $user->email = $this->email;
-        $user->password = \Yii::$app->security->generatePasswordHash($this->passowrd);
+        $user->password = \Yii::$app->security->generatePasswordHash($this->password);
         $user->access_token = \Yii::$app->security->generateRandomString();
         $user->auth_key = \Yii::$app->security->generateRandomString();
 
