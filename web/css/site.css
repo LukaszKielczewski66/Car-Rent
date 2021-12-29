@@ -214,4 +214,35 @@ header {
 }
 
 
-/* @media (min-width: 768px) {} */
+/* --------------------------------- */
+/*             SIGN-UP               */
+/* --------------------------------- */
+
+.signup-hero {
+    background-image: url('../img/signup-hero.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/* ------------ SIGNUP FORM -------------- */
+
+.signup-form {
+    font-size: 2rem;
+}
+
+
+.signup-form label {}
+
+.signup-form input {
+    font-size: 2rem;
+    border: 0;
+    border-bottom: 1px solid gray;
+}
+
+@media (min-width: 992px) {
+
+    .signup-form label,
+    .signup-form input {
+        margin-left: 35px;
+    }
+}
