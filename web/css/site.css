@@ -230,9 +230,6 @@ header {
     font-size: 2rem;
 }
 
-
-.signup-form label {}
-
 .signup-form input {
     font-size: 2rem;
     border: 0;
@@ -245,4 +242,8 @@ header {
     .signup-form input {
         margin-left: 35px;
     }
+}
+
+.btn-signup {
+    font-size: 2rem;
 }
