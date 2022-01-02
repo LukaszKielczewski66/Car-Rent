@@ -27,6 +27,7 @@ body {
     height: 20rem;
     background-size: cover;
     z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .top-hero-text {
@@ -214,26 +215,39 @@ header {
 }
 
 
-/* --------------------------------- */
-/*             SIGN-UP               */
-/* --------------------------------- */
+/* ------------------------------------ */
+/*             SIGN-UP, LOGIN           */
+/* ------------------------------------ */
+
+
+.signup-form,
+.login-form {
+    font-size: 2rem;
+}
+
+.signup-form input,
+.login-form input {
+    font-size: 2rem;
+    border: 0;
+    border-bottom: 1px solid gray;
+}
+
+
+.btn-signup,
+.btn-login {
+    font-size: 2rem;
+}
+
+.link {
+    font-size: 1.5rem;
+}
+
+/* ------------ SIGNUP FORM -------------- */
 
 .signup-hero {
     background-image: url('../img/signup-hero.jpg');
     background-position: center;
     background-size: cover;
-}
-
-/* ------------ SIGNUP FORM -------------- */
-
-.signup-form {
-    font-size: 2rem;
-}
-
-.signup-form input {
-    font-size: 2rem;
-    border: 0;
-    border-bottom: 1px solid gray;
 }
 
 @media (min-width: 992px) {
@@ -244,6 +258,26 @@ header {
     }
 }
 
-.btn-signup {
-    font-size: 2rem;
+/* ----------- LOGIN FORM -------------- */
+
+.login-hero {
+    background-image: url('../img/login-hero.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.login-form label {
+    margin-top: 15px;
+}
+
+.link-signup {
+    margin-bottom: 70px !important;
+}
+
+@media (min-width: 576px) {
+
+    .login-form label,
+    .login-form input {
+        margin-left: 35px;
+    }
 }

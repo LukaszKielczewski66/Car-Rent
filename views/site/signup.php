@@ -42,6 +42,6 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
 
         <?php ActiveForm::end(); ?>
-        <p class="mt-5 text-center">Already have account? <a href="login">Log in</a> here!</p>
+        <p class="mt-5 text-center link">Already have account? <a href="login">Log in</a> here!</p>
     </div>
 </section>
