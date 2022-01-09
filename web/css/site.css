@@ -39,6 +39,20 @@ body {
     text-transform: uppercase;
 }
 
+.logout {
+    font-size: 2rem !important;
+    text-transform: uppercase;
+    /* padding: 5px !important; */
+    padding-left: 0 !important;
+    color: #fff !important;
+    transition: 0ms;
+}
+
+.logout:hover {
+    color: #0275d8 !important;
+    text-decoration: none !important;
+}
+
 /* -------------------------------- */
 /*               NAV                */
 /* -------------------------------- */
@@ -279,5 +293,11 @@ header {
     .login-form label,
     .login-form input {
         margin-left: 35px;
+    }
+}
+
+@media (min-width: 768px) {
+    .logout {
+        margin-left: 5px;
     }
 }
